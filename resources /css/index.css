@@ -1,0 +1,94 @@
+/*Add some styling for the to-do list */
+body {
+  background-image: url('https://images.unsplash.com/photo-1606327054629-64c8b0fd6e4f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80');
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  position: relative;
+  z-index: 2;
+
+}
+
+.title {
+  text-align: center;
+  font-size: 3em;
+  color: #fff;
+  margin-top: 2px;
+  margin-bottom: 3px;
+}
+
+.card {
+  /* Add shadows to create the "card" effect */
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  width: 50%;
+  margin: auto;
+  margin-top: 16px;
+  padding: 2em;
+  border-radius: 5px; /* 5px rounded corners */
+}
+
+/* On mouse-over, add a deeper shadow */
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  background-color: rgba(238, 158, 11, 0.829);
+  
+}
+
+.task {
+  display: flex;
+  align-items: center;
+  padding: 0.5em 1em;
+  border-radius: 4px;
+  background-color: #FAFAFA;
+  margin-bottom: 1.5em;
+  font-size: large;
+  color: #333;
+}
+
+#task-input{
+  display: flex;
+  align-items: center;
+  padding: 0.5em 1em;
+  border-radius: 7px;
+  background-color: #FAFAFA;
+  margin-bottom: 0.5em;
+  text-align: center;
+  font-size: large;
+  color: #333;
+}
+
+#btn-add {
+  border-radius: 7px;
+  background: white;
+  margin-bottom: 0.5em;
+  cursor: pointer;
+  margin-left: auto;
+  color: rgb(5, 5, 5);
+  font-size: large;
+  font-weight: bold;
+}
+
+.task input[type="checkbox"] {
+  margin-right: 1em;
+
+}
+
+.task.completed {
+  background-color: #eee;
+  color: #999;
+  text-decoration: line-through;
+}
+
+.task button {
+  border: 0;
+  background: transparent;
+  cursor: pointer;
+  margin-left: auto;
+  color: rgb(236, 25, 10);
+  font-size: large;
+}
+
+.task button:hover {
+  color: rgb(5, 31, 148);
+}
